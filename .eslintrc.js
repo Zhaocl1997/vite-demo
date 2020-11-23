@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     'standard',
-    'plugin:vue/essential',
     'plugin:vue/vue3-recommended',
   ],
   parserOptions: {

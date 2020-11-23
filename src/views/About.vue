@@ -47,9 +47,9 @@ export default {
 
   activated () {},
 
-  methods: {},
+  deactivated () {},
 
-  deactivated () {}
+  methods: {}
 }
 </script>
 

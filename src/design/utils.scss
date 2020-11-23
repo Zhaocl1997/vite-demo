@@ -1,0 +1,11 @@
+.u-pointer {
+    cursor: pointer;
+}
+
+.u-hover {
+    &:hover {
+        color: blue;;
+        transform: scale(1.3);
+        font-weight: 700;
+    }
+}

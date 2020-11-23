@@ -30,5 +30,10 @@ module.exports = {
     },
     transpileDependencies: [
         'vuex-module-decorators'
-    ]
+    ],
+
+    // The package will be recompiled using rollup, and the new package compiled into the esm module specification will be put into node_modules/.vite_opt_cache
+    optimizeDeps: {
+        include: ['ant-design-vue/es/locale/zh_CN', '@ant-design/icons-vue'],
+    },
 };

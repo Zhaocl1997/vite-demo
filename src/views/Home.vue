@@ -56,11 +56,11 @@
           :sm="18"
           :md="12"
           :lg="12"
-          :xl="6"
+          :xl="8"
         >
           <a-card
             style="margin:0 20px 20px 20px;width:400px;"
-            :title="`Todo：${item.title}`"
+            :title="`ID：${item.id}`"
           >
             <template #extra>
               <DeleteOutlined
@@ -75,8 +75,8 @@
               :column="1"
               size="small"
             >
-              <a-descriptions-item label="ID">
-                <span>{{ item.id }}</span>
+              <a-descriptions-item label="Title">
+                <span>{{ item.title }}</span>
               </a-descriptions-item>
 
               <a-descriptions-item label="completed">

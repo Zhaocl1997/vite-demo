@@ -1,13 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">
-        Home
-      </router-link>
-      <router-link to="/about">
-        About
-      </router-link>
-    </div>
     <ConfigProvider :locale="zhCN">
       <router-view />
     </ConfigProvider>
@@ -15,22 +7,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
-import { ConfigProvider } from 'ant-design-vue'
-import zhCN from 'ant-design-vue/es/locale/zh_CN'
+import { ConfigProvider } from "ant-design-vue";
+import zhCN from "ant-design-vue/es/locale/zh_CN";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
 
   components: { ConfigProvider },
 
-  setup () {
+  setup() {
     return {
       zhCN
-    }
+    };
   }
-})
+});
 </script>
 
 <style lang="scss" scoped>

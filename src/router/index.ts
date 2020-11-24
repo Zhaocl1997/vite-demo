@@ -1,3 +1,4 @@
+
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
@@ -11,6 +12,11 @@ const routes: RouteRecordRaw[] = [
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue')
+  },
+  {
+    path: '/console',
+    name: 'Console',
+    component: () => import('../layout/index.vue')
   }
 ]
 

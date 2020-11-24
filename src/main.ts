@@ -3,16 +3,14 @@ import App from './App.vue'
 
 import './design/index.scss'
 
-import Antd from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css'
-
-import router from './router'
-import store from './store'
+import { setupAntd } from './setup/ant-design-vue'
+import { setupRouter } from './setup/Router'
+import { setupStore } from './setup/Store'
 
 const app = createApp(App)
 
-app.use(Antd)
-app.use(router)
-app.use(store)
+setupAntd(app)
+setupRouter(app)
+setupStore(app)
 
 app.mount('#app')

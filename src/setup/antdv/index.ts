@@ -16,7 +16,8 @@ import {
     Radio,
     Menu,
     Tabs,
-    Switch
+    Switch,
+    Select,
 } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 
@@ -37,4 +38,5 @@ export function setupAntd(app: App<Element>) {
         .use(Menu)
         .use(Tabs)
         .use(Switch)
+        .use(Select)
 }

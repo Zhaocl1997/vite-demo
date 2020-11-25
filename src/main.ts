@@ -3,7 +3,7 @@ import App from './App.vue'
 
 import './design/index.scss'
 
-import { setupAntd } from './setup/ant-design-vue'
+import { setupAntd } from './setup/antdv'
 import { setupRouter } from './setup/Router'
 import { setupStore } from './setup/Store'
 

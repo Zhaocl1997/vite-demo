@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^2.0.0-rc.1",
+    "easy-fns": "^1.1.18",
     "vue": "^3.0.2",
     "vue-router": "^4.0.0-rc.3",
     "vuex": "^4.0.0-rc.1",

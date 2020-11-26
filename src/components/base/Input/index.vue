@@ -22,7 +22,7 @@
 import { Input } from "ant-design-vue";
 import { ref, reactive, computed, defineComponent, onMounted } from "vue";
 
-import { clearIllegalChars } from "easy-fns/lib/string";
+import { clearIllegalChars } from "easy-fns-ts";
 
 export default defineComponent({
   name: "wInput",
@@ -36,7 +36,7 @@ export default defineComponent({
 
     blackList: {
       type: Array,
-      default: () => ["<", ">", "|", "="]
+      default: () => []
     }
   },
 

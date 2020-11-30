@@ -18,6 +18,7 @@ import {
     Tabs,
     Switch,
     Select,
+    InputNumber
 } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 
@@ -39,4 +40,5 @@ export function setupAntd(app: App<Element>) {
         .use(Tabs)
         .use(Switch)
         .use(Select)
+        .use(InputNumber)
 }

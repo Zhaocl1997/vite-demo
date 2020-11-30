@@ -6,6 +6,14 @@
       <a-tab-pane tab="Input" key="Input">
         <input-demo></input-demo>
       </a-tab-pane>
+
+      <a-tab-pane tab="InputNumber" key="InputNumber">
+        <input-number-demo></input-number-demo>
+      </a-tab-pane>
+
+      <a-tab-pane tab="Select" key="Select">
+        <select-demo></select-demo>
+      </a-tab-pane>
     </a-tabs>
   </div>
 </template>
@@ -14,12 +22,16 @@
 import { ref, reactive, defineComponent } from "vue";
 
 import InputDemo from "./components/Input.vue";
+import InputNumberDemo from "./components/InputNumber.vue";
+import SelectDemo from "./components/Select.vue";
 
 export default defineComponent({
   name: "",
 
   components: {
-    InputDemo
+    InputDemo,
+    InputNumberDemo,
+    SelectDemo
   },
 
   setup() {

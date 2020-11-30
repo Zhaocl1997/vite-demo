@@ -1,7 +1,7 @@
 <template>
   <div class="input-demo">
     <a-card size="small" :title="`普通输入框，当前绑定值：${inputValue1}`">
-      <w-input v-model:value="inputValue1" @change="onInputChange" @pressEnter="onInputEnter">
+      <w-input v-model:value="inputValue1" allow-clear @change="onInputChange" @pressEnter="onInputEnter">
         <template #suffix>
           <a-button size="small" @click="onChangeInputValue">change value</a-button>
         </template>
@@ -48,7 +48,7 @@
     </a-card>
 
     <a-card size="small" :title="`默认值输入框`">
-      <w-input default-value="有-model，default-value会失效"></w-input>
+      <w-input default-value="有v-model，default-value会失效"></w-input>
     </a-card>
   </div>
 </template>
